@@ -63,4 +63,15 @@ public class Person {
     public void addChild (Person child) {
         children.add(child);
     }
+
+    @Override
+    public String toString() {
+        return "Person{" +
+                "name='" + name + '\'' +
+                ", surname='" + surname + '\'' +
+                ", age=" + age +
+                ", adultOrChild=" + adultOrChild +
+                ", children=" + children +
+                '}';
+    }
 }

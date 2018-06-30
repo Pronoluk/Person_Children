@@ -16,19 +16,19 @@ public class PersonServiceImpl implements PersonService {
 
     @Override
     public boolean savePerson(Person person) {
-        System.out.printf(String.format("Saving person:[%s]",person));
+        System.out.printf(String.format("Saving person:[%s]", person));
         return personDao.savePerson(person);
     }
 
     @Override
     public boolean deletePerson(Person person) {
-        System.out.printf(String.format("Deleting person: [%s]",person));
+        System.out.printf(String.format("Deleting person: [%s]", person));
         return personDao.deletePerson(person);
     }
 
     @Override
     public boolean updatePerson(Person person) {
-        System.out.printf(String.format("Updating person: [%s]",person));
+        System.out.printf(String.format("Updating person: [%s]", person));
         return personDao.updatePerson(person);
     }
 
